@@ -4,7 +4,6 @@
   border-bottom: 1px solid #203c32;
   display: flex;
   justify-content: flex-end;
-  padding-right: 50px;
 }
 
 .nav > * {
@@ -16,7 +15,5 @@
 
 
 .nav > *:hover {
-    /* color: #5883aa; */
     color: #c15851;
-    /* color: #315c4c; */
 }

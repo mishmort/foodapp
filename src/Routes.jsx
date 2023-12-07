@@ -1,5 +1,3 @@
-// import { RouteObject } from "react-router-dom";
-// import Nav from "./Components/Nav/Nav";
 import Cart from "./Pages/Cart/Cart";
 import Checkout from "./Pages/Checkout/Checkout";
 import Home from "./Pages/Home/Home";

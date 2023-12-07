@@ -11,8 +11,6 @@ const MainButton = (props) => (
       textTransform: "capitalize",
       padding: "10px 15px",
       '&:hover': {
-        // backgroundColor: "#c15851"
-        // backgroundColor: "#0f1c18"
         backgroundColor: "#315c4c"
 
       }
