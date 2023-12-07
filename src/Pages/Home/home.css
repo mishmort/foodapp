@@ -1,0 +1,10 @@
+.home {
+  color: #203c32;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#designGuidelines {
+  margin-bottom: 30px;
+}
