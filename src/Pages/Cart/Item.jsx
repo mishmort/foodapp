@@ -40,7 +40,7 @@ export default function Item() {
 
   return (
     <ThemeProvider theme={theme}>
-    <Card  className={classes.root}>
+    <Card  className={classes.root} >
       <CardContent className={classes.content}>
 
         <Typography

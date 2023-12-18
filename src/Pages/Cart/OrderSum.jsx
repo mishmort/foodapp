@@ -32,7 +32,7 @@ export default function OrderSum() {
 
   return (
     <ThemeProvider theme={theme}>
-    <Card  className={classes.root} elevation={10}>
+    <Card  className={classes.root} elevation={10} >
       <CardContent>
         <Typography
           className={classes.title}
@@ -48,7 +48,7 @@ export default function OrderSum() {
         <Typography variant="subtitle2">
           <hr />
         </Typography>
-        <Grid container>
+        <Grid container >
           <Grid item xs={11} sm={11} md={11} lg={11}>
             <Typography  variant="body1" component="div" color="#203c32">
               Delivery Cost: 
@@ -72,14 +72,15 @@ export default function OrderSum() {
         </Grid>
       </CardContent>
 
-      <CardActions >
-        <Button size="large" style={{ marginLeft: "auto" }}>
+      <CardActions disableSpacing  >
+        <Button size="large" style={{ marginLeft: "auto" }}  >
         <Typography color="#8b0000" variant="h7" component="div">
               PAY
             </Typography>
         </Button>
       </CardActions>
     </Card>
+
     </ThemeProvider>
   );
 }
