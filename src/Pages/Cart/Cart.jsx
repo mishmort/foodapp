@@ -1,31 +1,30 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import { ThemeProvider, createTheme } from '@mui/system';
+import Grid from '@mui/material/Grid'; 
+import Slider from '@mui/material/Slider';
 import OrderSum from "./OrderSum";
 import Item from "./Item";
 import "./cart.css"
-export default function Cart() {
+export default function ShoppingCart() {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container fixed>
-        <Box sx={{ margin: 5 }}>
-          <Box item>
-            <Box  >
-              <Box xs>
+        <Grid container spacing={10}>
+          <Grid item xs={12} sm={6} md={7} lg={7}>
+            <Grid container>
+              <Grid item xs>
                 <Item />
                 <Item />
                 <Item />
-                <Item />
-              </Box>
-            </Box>
-          </Box>
-          <Box item >
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={6} md={5} lg={5}>
             <OrderSum />
-          </Box>
-        </Box>
+          </Grid>
+        </Grid>
       </Container>
     </React.Fragment>
   );

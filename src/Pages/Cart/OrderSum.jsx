@@ -4,64 +4,79 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from "@material-ui/core/CardContent";
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import {ThemeProvider, createTheme } from '@mui/system';
+import Grid from '@mui/material/Grid'; 
+import { createStyles, makeStyles } from '@mui/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import "./cart.css"
-const theme = createTheme({
 
+const useStyles = makeStyles({
+  
+  root: {
+    position: "sticky",
+    top: "20rem",
+    minWidth: "275"
+  },
+
+  title: {
+    fontSize: 14
+  },
+  pos: {
+    marginBottom: 12
+  }
 });
 
+const theme = createTheme();
 export default function OrderSum() {
+  const classes = useStyles();
 
   return (
     <ThemeProvider theme={theme}>
-
-    <Card  elevation={10} sx={{ width: 1 }}>
+    <Card  className={classes.root} elevation={10}>
       <CardContent>
         <Typography
-
+          className={classes.title}
           color="textSecondary"
           gutterBottom
         >
-          Cart
+          Shopping Cart
         </Typography>
-        <Typography variant="div" component="h1">
+        <Typography variant="div" component="h2">
           {" "}
-          Order
+          Order Summary
         </Typography>
         <Typography variant="subtitle2">
           <hr />
         </Typography>
-        <Box container >
-          <Box item xs={11} sm={11} md={11} lg={11}>
-            <Typography variant="body1" component="div">
-              Tax 
+        <Grid container>
+          <Grid item xs={11} sm={11} md={11} lg={11}>
+            <Typography  variant="body1" component="div">
+              Delivery Cost: 
             </Typography>
-          </Box>
-          <Box item xs={1} sm={1} md={1} lg={1}>
+          </Grid>
+          <Grid item xs={1} sm={1} md={1} lg={1}>
             <Typography variant="h6" component="div">
               $0
             </Typography>
-          </Box>
-          <Box item xs={11} sm={11} md={11} lg={11}>
+          </Grid>
+          <Grid item xs={11} sm={11} md={11} lg={11}>
             <Typography variant="body1" component="div">
-              Total
+              Total + HST
             </Typography>
-          </Box>
-          <Box item xs={1} sm={1} md={1} lg={1}>
+          </Grid>
+          <Grid item xs={1} sm={1} md={1} lg={1}>
             <Typography variant="h6" component="div">
               $0
             </Typography>
-          </Box>
-        </Box>
+          </Grid>
+        </Grid>
       </CardContent>
 
       <CardActions>
-        <Button size="large" color="secondary" style={{ marginLeft: "auto" }}>
+        <Button size="large" style={{ marginLeft: "auto" }}>
           PAY
         </Button>
       </CardActions>
     </Card>
-  </ThemeProvider>
+    </ThemeProvider>
   );
 }
