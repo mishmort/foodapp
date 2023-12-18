@@ -8,6 +8,7 @@ import Restaurant from "./Pages/Restaurant/Restaurant";
 import RestaurantForm from "./Pages/RestaurantForm/RestaurantForm";
 import NotFound from "./Pages/NotFound/NotFound";
 import Nav from "./FoodApp";
+import Signup from "./Pages/Login/Signup/Signup";
 
 export const routes = [
   {
@@ -22,9 +23,10 @@ export const routes = [
       { path: "/menu", element: <Menu /> },
       { path: "/restaurant", element: <Restaurant /> },
       { path: "/restaurantform", element: <RestaurantForm /> },
+			{ path: "/signup", element: <Signup />},
       { path: "*", element: <NotFound /> },
     ],
-
+		Signup: <Signup />,
     errorElement: <NotFound />,
   },
 ];
