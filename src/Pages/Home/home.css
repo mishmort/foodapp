@@ -1,8 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 .home {
   color: #203c32;
-
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.home .footapp {
+  height: 100%;
+}
+
+
+.filter-item {
+  margin-right: 20px;
+}
+
+#filterButtons {
+  display: flex;
+  flex-direction: row;
 }
 
 #designGuidelines {

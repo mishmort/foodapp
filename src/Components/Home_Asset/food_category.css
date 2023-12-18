@@ -1,0 +1,24 @@
+
+.food-categories-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .food-categories {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .category-item {
+    min-width: 50px;
+    color: #ffe7bf;
+    margin: 10px;
+    text-align: center;
+    background-color: #203c32;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
