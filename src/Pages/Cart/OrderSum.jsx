@@ -22,6 +22,7 @@ const useStyles = makeStyles({
   },
   pos: {
     marginBottom: 12
+
   }
 });
 
@@ -40,7 +41,7 @@ export default function OrderSum() {
         >
           Shopping Cart
         </Typography>
-        <Typography variant="div" component="h2">
+        <Typography variant="div" component="h2" color="#203c32">
           {" "}
           Order Summary
         </Typography>
@@ -49,31 +50,33 @@ export default function OrderSum() {
         </Typography>
         <Grid container>
           <Grid item xs={11} sm={11} md={11} lg={11}>
-            <Typography  variant="body1" component="div">
+            <Typography  variant="body1" component="div" color="#203c32">
               Delivery Cost: 
             </Typography>
           </Grid>
           <Grid item xs={1} sm={1} md={1} lg={1}>
-            <Typography variant="h6" component="div">
+            <Typography variant="h6" component="div" color="#203c32">
               $0
             </Typography>
           </Grid>
           <Grid item xs={11} sm={11} md={11} lg={11}>
-            <Typography variant="body1" component="div">
+            <Typography variant="body1" component="div" color="#203c32">
               Total + HST
             </Typography>
           </Grid>
           <Grid item xs={1} sm={1} md={1} lg={1}>
-            <Typography variant="h6" component="div">
+            <Typography variant="h6" component="div" color="#203c32">
               $0
             </Typography>
           </Grid>
         </Grid>
       </CardContent>
 
-      <CardActions>
+      <CardActions >
         <Button size="large" style={{ marginLeft: "auto" }}>
-          PAY
+        <Typography color="#8b0000" variant="h7" component="div">
+              PAY
+            </Typography>
         </Button>
       </CardActions>
     </Card>
