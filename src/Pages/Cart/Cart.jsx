@@ -7,33 +7,31 @@ import OrderSum from "./OrderSum";
 import Item from "./Item";
 import "./cart.css"
 import Box from '@mui/system/Box';
+{
+// Grid  item xs={12} sm={12} md={12} lg={15}
+}
 export default function ShoppingCart() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container fixed>
-        <Grid container spacing={1}   >
-          <Grid  item xs={12} sm={12} md={12} lg={15}>
-            <Grid container >
-              <Grid item xs sx={{overflowY: "scroll",  
+      <Box display="flex" alignItems="center" gap={20}  >
+          <Box>
+            <Box width={800} >
+              <Box sx={{overflowY: "scroll",  
               '&::-webkit-scrollbar': {width: '0.2em',},   
               '&::-webkit-scrollbar-track': {background: "#ffe7bf",},
               '&::-webkit-scrollbar-thumb': {backgroundColor: "#203c32",},maxHeight: "680px" }} >
                 <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={15} >
+              </Box>
+            </Box>
+          </Box>
           <Box  >
+          <Box height={250} width={450}  >
             <OrderSum />
             </Box>
-          </Grid>
-        </Grid>
-      </Container>
+          </Box>
+        </Box>
+
     </React.Fragment>
   );
 }

@@ -14,14 +14,14 @@ const useStyles = makeStyles({
   root: {
     position: "sticky",
     top: "20rem",
-    minWidth: "275"
+    minWidth: "27"
   },
 
   title: {
     fontSize: 14
   },
   pos: {
-    marginBottom: 12
+    marginBottom: 10
 
   }
 });
@@ -48,7 +48,7 @@ export default function OrderSum() {
         <Typography variant="subtitle2">
           <hr />
         </Typography>
-        <Grid container >
+        <Grid container spacing={-10}>
           <Grid item xs={11} sm={11} md={11} lg={11}>
             <Typography  variant="body1" component="div" color="#203c32">
               Delivery Cost: 
@@ -56,7 +56,7 @@ export default function OrderSum() {
           </Grid>
           <Grid item xs={1} sm={1} md={1} lg={1}>
             <Typography variant="h6" component="div" color="#203c32">
-              $0
+              $3.99
             </Typography>
           </Grid>
           <Grid item xs={11} sm={11} md={11} lg={11}>
@@ -66,7 +66,7 @@ export default function OrderSum() {
           </Grid>
           <Grid item xs={1} sm={1} md={1} lg={1}>
             <Typography variant="h6" component="div" color="#203c32">
-              $0
+              $142.267
             </Typography>
           </Grid>
         </Grid>
@@ -75,7 +75,7 @@ export default function OrderSum() {
       <CardActions disableSpacing  >
         <Button size="large" style={{ marginLeft: "auto" }}  >
         <Typography color="#8b0000" variant="h7" component="div">
-              PAY
+              Checkout
             </Typography>
         </Button>
       </CardActions>
