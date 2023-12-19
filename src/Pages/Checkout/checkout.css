@@ -1,3 +1,40 @@
 .checkout {
-  color: #203c32;
+    width: auto;
+    margin: auto;
+		background-color: inherit;
+		text-align: center;
+		color: #203c32;
+		border: 1px solid;
+		border-color: #203c32;
+		padding: 70px;
+		padding-top: 0px;
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
+.login input {
+    margin-bottom: 23px;
+    padding: 8px;
+		width: 80%;
+		text-align: center;
+		border: 1px solid;
+		border-radius: 5px;
+		color: inherit;
+}
+
+.login button{
+		width: 70%;
+}
+
+.login Link {
+		color: #203c32;
+		font-size: 1em;
+		margin: 5px;
+		width: 100%;
+}
+
+.login a:hover {
+		text-decoration: underline;
 }
