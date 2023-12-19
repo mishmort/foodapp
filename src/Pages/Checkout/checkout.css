@@ -14,7 +14,7 @@
 		align-items: center;
 }
 
-.login input {
+.checkout input {
     margin-bottom: 23px;
     padding: 8px;
 		width: 80%;
@@ -24,17 +24,8 @@
 		color: inherit;
 }
 
-.login button{
-		width: 70%;
-}
-
-.login Link {
-		color: #203c32;
+.checkout span {
 		font-size: 1em;
-		margin: 5px;
-		width: 100%;
-}
+		font-weight: bold;
 
-.login a:hover {
-		text-decoration: underline;
 }
