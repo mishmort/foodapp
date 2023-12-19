@@ -114,7 +114,7 @@ export default function Checkout() {
             <React.Fragment>
                           
               {getStepContent(activeStep)}
-              <Typography variant="h5" gutterBottom>
+              <Typography color="#203c32"  variant="h5" gutterBottom>
           ----------------------------------------------------------------------------
         </Typography>
               <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
