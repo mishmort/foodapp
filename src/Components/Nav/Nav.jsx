@@ -10,7 +10,7 @@ export const Nav = () => {
       <div className="title">
         asy
         <br />
-        eats
+        ats
       </div>
       <NavLink to="cart">Cart</NavLink>
       <NavLink to="checkout">Checkout</NavLink>
