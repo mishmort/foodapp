@@ -2,7 +2,7 @@
   width: 100%;
   max-height: 50px;
   min-height: 50px;
-
+  position: relative;
   border-bottom: 1px solid #203c32;
   display: flex;
   justify-content: flex-end;
@@ -15,7 +15,27 @@
   color: #203c32;
 }
 
-
 .nav > *:hover {
-    color: #c15851;
+  color: #c15851;
+}
+
+.easyeats {
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  margin: 0px;
+  height: 40px;
+}
+
+.title {
+  position: absolute;
+  left: 60px;
+  top: 5px;
+  margin: 0px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.title:hover {
+  color: #203c32;
 }
