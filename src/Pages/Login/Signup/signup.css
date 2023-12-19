@@ -1,4 +1,4 @@
-.login {
+.signup {
     width: auto;
     margin: auto;
 		background-color: inherit;
@@ -14,7 +14,7 @@
 		align-items: center;
 }
 
-.login input {
+.signup input {
     margin-bottom: 23px;
     padding: 8px;
 		width: 80%;
@@ -24,17 +24,30 @@
 		color: inherit;
 }
 
-.login button{
+.signup button{
 		width: 70%;
 }
 
-.login Link {
+.signup Link {
 		color: #203c32;
 		font-size: 1em;
 		margin: 5px;
 		width: 100%;
 }
-
-.login a:hover {
+.signup a:hover {
 		text-decoration: underline;
+}
+
+.signup select {
+		width: 60%;
+		text-align: center;
+}
+
+.signup #password {
+		margin-bottom: 0px;
+}
+
+.signup p {
+		margin-bottom: 5px;
+		margin-top: 0px;
 }
