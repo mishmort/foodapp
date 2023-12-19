@@ -2,6 +2,6 @@
 
 React + JS + Vite
 
-Food App
+Easy Eats
 
 
