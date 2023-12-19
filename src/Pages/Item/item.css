@@ -1,3 +1,10 @@
 .item {
   color: #203c32;
+  max-width: 50%;
+  margin: auto;
+}
+
+span {
+  font-size: 1rem;
+  color: #203c32;
 }

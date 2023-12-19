@@ -1,3 +1,163 @@
 .restaurantForm {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
   color: #203c32;
+}
+
+.mainUpload,
+.coverUpload {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.mainImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainUpload {
+  width: 70%;
+}
+
+.mainPreview {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #203c32;
+}
+
+.hours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.day {
+  flex-basis: 100px;
+}
+
+.menu-options {
+  margin: 20px 0;
+}
+
+.restaurant-profile {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+  background-color: #203c328d;
+  border: 1px solid #203c32;
+}
+
+.day-time {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.weekday {
+  min-width: 200px;
+  text-align: center;
+}
+
+.MuiSlider-root *{
+  color: #203c32;
+  
+}
+
+.MuiSlider-markLabel {
+  color: #203c32 !important;
+ padding: 5px 10px;
+ border-radius: 50px;
+}
+
+
+.MuiSlider-markLabel[data-index="0"] {
+  left: 40px !important;
+}
+
+.MuiSlider-markLabel[data-index="2"] {
+  left: 94% !important;
+}
+
+.MuiSlider-markLabelActive 	{
+  font-weight: bold !important;
+  color: #ffe7bf !important;
+  background-color: #203c32;
+}
+
+h1 {
+  color: #203c32;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #000;
+  margin-top: 10px;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.logo-cell,
+.text-cell,
+.checkbox-cell {
+  border-right: 1px solid #203c32;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-cell:last-child,
+.text-cell:last-child,
+.checkbox-cell:last-child {
+  border-right: none;
+}
+
+.logo-placeholder {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #203c32;
+}
+
+.text-cell {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.checkbox-cell {
+  padding-right: 12px; 
+}
+
+.MuiCheckbox-root {
+  padding: 0;
+  margin-right: -12px;
 }
