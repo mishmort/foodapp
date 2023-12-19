@@ -15,7 +15,7 @@ export const routes = [
     element: <Nav />,
     children: [
       { path: "/cart", element: <Cart /> },
-      { path: "/checkout", element: <Checkout /> },
+      { path: "/Checkout", element: <Checkout /> },
       { path: "/home", element: <Home /> },
       { path: "/item", element: <Item /> },
       { path: "/login", element: <Login /> },
